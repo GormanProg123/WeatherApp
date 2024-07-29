@@ -1,0 +1,207 @@
+body {
+  overflow-y: hidden;
+}
+
+.weatherContainer {
+  padding: 20px;
+  margin: 20px;
+  margin-top: 30px;
+  padding-top: 20px;
+  position: relative; 
+}
+
+.weatherDataAndForecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherDataContainer {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 20px;
+  margin-top: 180px; 
+}
+
+.forecast {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 150px;
+}
+
+.weatherDataContainer::after {
+  content: '';
+  display: block;
+  height: 20px; 
+  background-color: #f8f9fa; 
+  border-radius: 0 0 10px 10px;
+}
+
+.forecast::after {
+  content: '';
+  display: block;
+  height: 20px; 
+  background-color: #f8f9fa; 
+  border-radius: 0 0 10px 10px;
+}
+
+.weatherTableContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; 
+}
+
+.weatherTable, .forecastTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-top: none; 
+}
+
+.weatherTable th, .forecastTable th {
+  background-color: #f2f2f2;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.weatherTable td, .forecastTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.weatherTableContainer .weatherTable {
+  border-top: none; 
+}
+
+.names {
+  background-color: white;
+  margin-bottom: -20px;
+  width: 50%;
+}
+
+.names1 {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: -20px;
+  position: relative;
+  top: -42px;
+  align-items: flex-start;
+  color: white;
+  font-weight: normal;
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #3a5b76;
+}
+
+.temperatureContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.temp {
+  margin-top: -35px;
+  font-size: 70px;
+  color: white;
+}
+
+.unii {
+  font-size: 35px;
+  color: white;
+  margin-left: 1px;
+  position: relative;
+  top: -25px;
+}
+
+.uni {
+  font-size: 35px;
+  color: white;
+  margin-left: 1px;
+  margin-top: -28px;
+}
+
+.cond {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  margin-left: -2px;
+  top: -10px;
+}
+
+.fell {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.feelsLikeContainer {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  position: absolute; 
+  top: 330px; 
+  left: 20px; 
+}
+
+.fel {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+  position: absolute; 
+  top: 280px; 
+}
+
+.Ima {
+  position: absolute;
+  top: 180px; 
+  text-align: center;
+  padding: 10px;
+  width: 5%;
+  height: 10%;
+}
+
+.image{
+  position: absolute;
+  left: -8px;
+  text-align: center;
+  top: -5px;
+  height: 110%;
+}
+
+.weatherTable img {
+  width: 20px; 
+}
+
+.windSpeedImage {
+  width: 12px;  
+  height: auto; 
+}
+
+.rowSection {
+  border-bottom: 1px solid #ddd;
+}
+
+.rowSeparator {
+  height: 70px; 
+  background-color: #f8f9fa; 
+  border: none; 
+}
+
+.weatherTable td {
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.weatherTable img {
+  width: 20px; 
+}

@@ -1,0 +1,104 @@
+.weatherContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.table {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 130px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative; 
+}
+
+.location {
+  display: flex;
+  align-items: flex-start; 
+  margin: 0; 
+  padding: 0; 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+}
+
+.name{
+  display: flex;
+  align-items: flex-start; 
+  color: grey;
+  font-weight: normal;
+}
+
+.temp{
+  display: flex;
+  align-items: flex-start; 
+  margin: 0; 
+  padding: 0; 
+  position: absolute; 
+  top: 40px; 
+  left: 10px; 
+}
+
+.condition{
+  display: flex;
+  align-items: flex-start; 
+  margin: 0; 
+  padding: 0; 
+  position: absolute;
+  top: 200px;
+  left: 10px;
+}
+
+.button{
+  display: flex;
+  align-items: flex-start; 
+  margin: 0; 
+  padding: 0; 
+  position: absolute;
+  top: 230px;
+  left: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Georgia, serif; 
+}
+
+.country {
+  background-color: yellow;
+  margin-left: 5px;
+  font-size: 12px;
+  align-self: flex-start; 
+  font-style: oblique;
+  font-weight: 100;
+}
+
+.tempa{
+  font-size: 40px;
+  margin-top: -10px;
+}
+
+.uni{
+  left: 10px;
+  margin-left: 5px;
+  margin-top: -8px;
+  font-size: 25px;
+}
+
+.cond{
+  font-size: 15px;
+  margin-top: 5px;
+  color: grey;
+  font-family: Georgia, serif; 
+  text-transform: uppercase;
+}
