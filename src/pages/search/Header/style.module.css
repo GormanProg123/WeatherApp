@@ -19,24 +19,33 @@
   flex: 1;
 }
 
+.searchForm {
+  display: flex;
+  align-items: center;
+  position: relative; /* Add relative positioning */
+}
+
 .google {
   border: 2px solid white;
   border-radius: 20px;
   padding: 10px 20px;
-  width: calc(100% + 50px); 
+  width: 200%; 
   box-sizing: border-box;
   background-color: #039;
   text-align: center;
   color: white;
   margin-left: 10px; 
+  cursor: pointer; 
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   background: url('../../../assets/Loop.png') no-repeat center center;
   background-size: contain;
-  margin-left: 10px;
+  margin-left: -40px; 
+  cursor: pointer; 
+  z-index: 1; 
 }
 
 .but {
@@ -46,6 +55,13 @@
   height: 40px;
   border: none;
   margin-right: 10px; 
+  cursor: pointer; 
+}
+
+.google:hover,
+.icon:hover,
+.but:hover {
+  opacity: 0.8; 
 }
 
 .menu {
@@ -82,8 +98,9 @@
   height: 100%;
 }
 
-.item:active {
-  background-color: red;
+.selected {
+  background-color: green; 
+  color: white; 
 }
 
 .op {
@@ -101,6 +118,26 @@
   height: 40px;
   border: none;
   transform: translateX(-10px);
+}
+
+.suggestionsList {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  width: 100%;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background: #f0f0f0;
 }
 
 @media (max-width: 768px) {

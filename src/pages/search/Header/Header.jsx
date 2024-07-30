@@ -6,6 +6,7 @@ export const Header = ({ disableSearch = false, showInput = true, onUnitChange }
   const navigate = useNavigate();
   const [isOpen, setOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedUnit, setSelectedUnit] = useState(""); 
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
@@ -25,6 +26,7 @@ export const Header = ({ disableSearch = false, showInput = true, onUnitChange }
   };
 
   const handleUnitChange = (newUnit) => {
+    setSelectedUnit(newUnit); 
     if (onUnitChange) {
       onUnitChange(newUnit);
     }
@@ -41,7 +43,7 @@ export const Header = ({ disableSearch = false, showInput = true, onUnitChange }
                 onClick={handleButtonClick}
                 disabled={disableSearch}
               ></button>
-              <form onSubmit={handleSearchSubmit}>
+              <form onSubmit={handleSearchSubmit} className={styles.searchForm}>
                 <input
                   className={styles.google}
                   value={searchTerm}
@@ -49,8 +51,8 @@ export const Header = ({ disableSearch = false, showInput = true, onUnitChange }
                   placeholder="Enter city or village"
                   disabled={disableSearch}
                 />
+                <span className={styles.icon} onClick={handleSearchSubmit} />
               </form>
-              <span className={styles.icon} />
             </>
           )}
         </div>
@@ -59,7 +61,7 @@ export const Header = ({ disableSearch = false, showInput = true, onUnitChange }
             <ul className={styles.list}>
               <li>
                 <button
-                  className={styles.item}
+                  className={`${styles.item} ${selectedUnit === "metric" ? styles.selected : ''}`} 
                   onClick={() => handleUnitChange("metric")}
                 >
                   ℃
@@ -67,7 +69,7 @@ export const Header = ({ disableSearch = false, showInput = true, onUnitChange }
               </li>
               <li>
                 <button
-                  className={styles.item}
+                  className={`${styles.item} ${selectedUnit === "imperial" ? styles.selected : ''}`} 
                   onClick={() => handleUnitChange("imperial")}
                 >
                   ℉
