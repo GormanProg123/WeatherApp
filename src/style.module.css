@@ -59,15 +59,15 @@ body {
   }  
 
   .name {
-    font-size: 50px;
+    font-size: 45px;
     left: 10px;
     top: -35px;
   }
 
   .text {
-    font-size: 35px;
+    font-size: 30px;
     left: 15px;
-    top: 50px;
+    top: 45px;
   }
 
   .start {
