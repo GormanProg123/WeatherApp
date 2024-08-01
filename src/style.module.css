@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #13588b;
 }
 
@@ -11,7 +11,7 @@ body{
   font-family: 'Times New Roman', Times, serif;
 }
 
-.text{
+.text {
   font-size: 50px;
   position: fixed;
   left: 260px;
@@ -20,7 +20,7 @@ body{
   font-style: italic;
 } 
 
-.start{
+.start {
   font-size: 30px;
   position: fixed;
   left: 260px;
@@ -37,17 +37,48 @@ body{
   border-radius: 10px;
 }
 
-.start:hover{
+.start:hover {
   background-color: rgb(30, 30, 192);
   cursor: pointer;
 }
 
-.start:active{
+.start:active {
   background-color: rgb(10, 10, 163);
 }
 
-.image{
+.image {
   left: 1200px;
   top: 165px;
   position: fixed;
+}
+
+@media (max-width: 768px) {
+
+  .name {
+    font-size: 50px;
+    left: 10px;
+    top: -15px;
+  }
+
+  .text {
+    font-size: 35px;
+    left: 15px;
+    top: 70px;
+  }
+
+  .start {
+    left: 50%;
+    top: 750px; 
+    transform: translateX(-50%);
+    width: 90%; 
+    font-size: 35px;
+    padding: 15px 30px; 
+  }
+
+  .image {
+    left: 5px;
+    top: 260px;
+    width: 420px; 
+    height: auto; 
+  }
 }

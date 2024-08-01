@@ -18,7 +18,7 @@ export const Home = () => {
         Start
       </button>
       <div className={styles.image}>
-        <img src={Cloudy} alt="Cloudy weather icon" />
+        <img src={Cloudy} alt="Cloudy weather icon" className={styles.image} />
       </div>
     </div>
   );

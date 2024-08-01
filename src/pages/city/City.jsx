@@ -48,7 +48,7 @@ const getWeatherImage = (condition, isDaytime) => {
   if (condition.includes('smoke')) return weatherImages.Mist;
   if (condition.includes('haze')) return weatherImages.Squalls;
 
-  return weatherImages.Clear; // Default
+  return weatherImages.Clear; 
 };
 
 const countryNameMap = {
@@ -270,7 +270,7 @@ export const City = () => {
           </div>
           <h3 className={styles.fel}>Feels Like:</h3>
           <div className={styles.feelsLikeContainer}>
-            <span className={styles.temp}>{weatherData.feelsLike}</span>
+            <span className={styles.temp1}>{weatherData.feelsLike}</span>
             <span className={styles.unii}>{weatherData.unit}</span>
           </div>
           <div className={styles.weatherDataAndForecast}>
