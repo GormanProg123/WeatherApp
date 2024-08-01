@@ -200,7 +200,7 @@
     padding: 10px; 
     line-height: 1; 
     width: 100px;
-    transform: translateX(330px);
+    transform: translateX(325px);
     margin-top: 40px;
   }
 
@@ -328,7 +328,7 @@
     padding: 10px; 
     line-height: 1; 
     width: 100px;
-    transform: translateX(420px);
+    transform: translateX(325px);
     margin-top: 40px;
   }
 }
