@@ -85,4 +85,65 @@ body {
     width: 420px; 
     height: auto; 
   }
+
+  @media (max-width: 480px) {
+    .name {
+      font-size: 30px;
+      left: 5px;
+      top: -10px;
+    }
+  
+    .text {
+      font-size: 20px;
+      left: 10px;
+      top: 30px;
+    }
+  
+    .start {
+      left: 50%;
+      top: 600px; 
+      transform: translateX(-50%);
+      width: 90%; 
+      font-size: 25px;
+      padding: 10px 20px; 
+    }
+  
+    .image {
+      left: 5px;
+      top: 170px;
+      width: 300px; 
+      height: auto; 
+    }
+  }
+  
+  /* Медиа-запрос для телефонов среднего размера (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .name {
+      font-size: 40px;
+      left: 10px;
+      top: 10px;
+    }
+  
+    .text {
+      font-size: 25px;
+      left: 15px;
+      top: 60px;
+    }
+  
+    .start {
+      left: 50%;
+      top: 650px; 
+      transform: translateX(-50%);
+      width: 90%; 
+      font-size: 30px;
+      padding: 12px 25px; 
+    }
+  
+    .image {
+      left: 10px;
+      top: 200px;
+      width: 350px; 
+      height: auto; 
+    }
+  }
 }
