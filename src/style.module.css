@@ -94,9 +94,9 @@ body {
     }
   
     .text {
-      font-size: 20px;
+      font-size: 25px;
       left: 10px;
-      top: 30px;
+      top: 40px;
     }
   
     .start {
@@ -109,14 +109,14 @@ body {
     }
   
     .image {
-      left: 5px;
+      left: 30px;
       top: 170px;
-      width: 300px; 
+      width: 370px; 
       height: auto; 
     }
   }
   
-  /* Медиа-запрос для телефонов среднего размера (481px - 768px) */
+  
   @media (min-width: 481px) and (max-width: 768px) {
     .name {
       font-size: 40px;
