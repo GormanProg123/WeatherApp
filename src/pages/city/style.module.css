@@ -276,7 +276,7 @@ body {
     transform: translateX(-40px);
     width: 117%; 
     padding: 15px;
-    font-size: 13.5px; 
+    font-size: 11.5px; 
   }
 
   @media (max-width: 480px) {
