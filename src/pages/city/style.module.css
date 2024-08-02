@@ -278,4 +278,144 @@ body {
     padding: 15px;
     font-size: 13.5px; 
   }
+
+  @media (max-width: 480px) {
+    body {
+      overflow-y: auto;
+    }  
+  
+    .names1{
+      font-size: 18px;
+      top: 10px;
+      left: -35px;
+    }
+  
+    .temp{
+      font-size: 45px;
+      margin-top: 20px;
+      transform: translateX(-35px);
+    }
+  
+    .temp1{
+      font-size: 45px;
+      transform: translateX(-37px);
+      margin-top: -90px;
+    }
+  
+    .uni{
+      transform: translateY(50px);
+      margin-left: -35px;
+    }
+  
+    .unii{
+      transform: translateX(-38px);
+      top: -49px;
+    }
+  
+    .cond{
+      left: -34px;
+    }
+  
+    .image{
+      transform: translateX(-45px); 
+      top: -25px;
+      height: 110px;
+      width: auto;
+    }
+  
+    .fel{
+      left: -15px;
+      transform: translateY(-25px);
+    }
+  
+    .weatherDataAndForecast {
+      flex-direction: column;
+    }
+  
+    .weatherDataContainer {
+      margin-right: 0;
+      margin-top: 150px;
+      transform: translateX(-40px);
+    }
+  
+    .forecast {
+      margin-top: 14px;
+      transform: translateX(-40px);
+      width: 117%; 
+      padding: 15px;
+      font-size: 13.5px; 
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    body {
+      overflow-y: auto;
+    }
+  
+    .names1 {
+      font-size: 18px;
+      top: 10px;
+      left: -35px;
+    }
+  
+    .temp {
+      font-size: 45px;
+      margin-top: 20px;
+      transform: translateX(-35px);
+    }
+  
+    .temp1 {
+      font-size: 45px;
+      transform: translateX(-37px);
+      margin-top: -90px;
+    }
+  
+    .uni {
+      font-size: 25px;
+      transform: translateY(50px);
+      margin-left: -35px;
+    }
+  
+    .unii {
+      font-size: 25px;
+      transform: translateX(-38px);
+      top: -49px;
+    }
+  
+    .cond {
+      font-size: 25px;
+      left: -34px;
+    }
+  
+    .image {
+      transform: translateX(-45px);
+      top: -25px;
+      height: 120px;
+      width: auto;
+    }
+  
+    .fel {
+      left: -15px;
+      transform: translateY(-25px);
+    }
+  
+    .weatherDataAndForecast {
+      flex-direction: column;
+    }
+  
+    .weatherDataContainer {
+      margin-right: 0;
+      margin-top: 150px;
+      transform: translateX(-40px);
+      padding: 15px;
+    }
+  
+    .forecast {
+      margin-top: 14px;
+      transform: translateX(-40px);
+      width: 100%;
+      padding: 15px;
+      font-size: 13.5px;
+    }
+  }
 }
